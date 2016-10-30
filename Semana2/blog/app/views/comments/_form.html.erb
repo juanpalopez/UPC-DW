@@ -1,0 +1,23 @@
+<%= form_for([@article, @comment]) do |f| %>
+	<%if @comment.errors.any? %>
+		<div>
+			<h2><%= pluralize(@comment.errors.count, "error") %></h2>
+		</div>
+
+	<%end%>
+
+	<div class="field">
+		<%= f.label :author %>
+		<%= f.text_field :author %>
+	</div>
+	
+	<div class="field">
+		<%= f.label :body %>
+		<%= f.text_field :body %>
+	</div>
+
+	<div class="actions">
+		<%= f.submit%>
+	</div>
+<% end %>
+	
