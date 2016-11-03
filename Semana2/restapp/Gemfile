@@ -34,9 +34,26 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'mysql2', '~> 0.3.20'
 
+# Gems Sprint 1
+
 gem 'therubyracer'
+
+# Less gem
 gem 'less-rails'
+
+# Frontend Framework Boostrap gem
 gem 'twitter-bootstrap-rails'
+gem 'bootstrap-datepicker-rails', '~> 1.6', '>= 1.6.4.1'
+
+
+# Authentication Support
+gem 'devise', '~> 4.2'
+
+#  Simple Form
+gem 'simple_form', '~> 3.3', '>= 3.3.1'
+
+# Rails admin section support
+gem 'rails_admin', '~> 1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
